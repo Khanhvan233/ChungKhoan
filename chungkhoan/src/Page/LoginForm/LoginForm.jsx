@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './LoginForm.css'
 import { ImUserTie } from "react-icons/im";
 import { FaUnlock } from "react-icons/fa6";
@@ -22,6 +22,12 @@ const LoginForm = () => {
   function handleSelectedRole(event){
     setRole(event.target.value)
   }
+  
+  // use thís to make own body 
+  useEffect(() => {
+    document.body.classList.add('login-page');
+    return () => document.body.classList.remove('login-page');
+  }, []);
   return (
     <div className='wrapper'>
     <form action=''>
