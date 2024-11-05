@@ -16,6 +16,11 @@
     font-weight: bold;
     color: rebeccapurple;
 }
+.top .stock{
+    font-weight: bold;
+    font-size: 20px;
+    color: rebeccapurple;
+}
 .sidebar .top .hr{
     height: 0;
     border: 0.5px solid lightgray;
@@ -30,11 +35,17 @@
     margin: 0;  
     padding: 0;
 }
+.center .title{
+    font-size: 15px;
+    font-weight: bold;
+    color: #999;
+    margin-top: 15px;
+}
 ul li{
     margin: 10px;
     cursor: pointer;
     font-size: 25px;
-    margin-top: 30px;
+    margin-top: 25px;
     &:hover{
         background-color: #ece8ff;
     }
@@ -42,5 +53,5 @@ ul li{
 li .icon{
     font-size: 20px;
     margin-right: 3px;
-    color: #4ded95;
+    color: rebeccapurple;
 }
