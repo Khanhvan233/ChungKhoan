@@ -1,11 +1,18 @@
-import React, { useEffect } from 'react'
 import Sidebar from '../../Components/Sidebar/Sidebar';
 import './Home.css'
+import ModalComponent from '../../Components/ModalComponet/ModalComponent';
 const Home = () => {
   return (
     <div className='home'>
       <Sidebar/>
-      <div className='homeContainer'>container</div>
+      <div className='homeContainer'>
+        <div className='listContainer'>
+          <div className="listTitle">Danh sách nhân viên</div>
+          <ModalComponent title="Xóa sản phẩm" open={false}>
+          <div>Bạn có chắc xóa sản phẩm này không?</div>
+        </ModalComponent>
+        </div>
+      </div>
     </div>
   )
 }
