@@ -24,13 +24,19 @@ body.login-page {
     font-size: 36px;
     text-align: center;
 }
-.wrapper .select-box{
-    background: transparent;
+.wrapper .wrapperselect{
+    display: flex;
+    justify-content: space-between; /* Đảm bảo các select box được căn trái và phải */
+    align-items: center; /* Căn chỉnh theo chiều dọc nếu cần */
+}
+.wrapperselect .select-box{
+    background: rebeccapurple;
     border: none;
     outline: none;
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
     font-size: 16px;
+    width: 55%;
 }
 
 .wrapper .input-box{

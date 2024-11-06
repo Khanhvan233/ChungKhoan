@@ -31,21 +31,19 @@ const LoginForm = () => {
   return (
     <div className='wrapper'>
     <form action=''>
-
       <h1>Login</h1>
-
-      <select className='select-box' onChange={handleSelectedCompany} style={{ marginRight: '110px'}}>
-        {companyOptions.map(option => (
-          <option value={option.value}>{option.label}</option>
-        ))}
-      </select>
-
-      <select className='select-box' onChange={handleSelectedCompany}>
-        {roleOptions.map(option => (
-          <option value={option.value}>{option.label}</option>
-        ))}
-      </select>
-
+      <div className="wrapperselect">
+        <select className='select-box' onChange={handleSelectedCompany}>
+          {companyOptions.map(option => (
+            <option value={option.value}>{option.label}</option>
+          ))}
+        </select>
+        <select className='select-box' onChange={handleSelectedCompany}>
+          {roleOptions.map(option => (
+            <option value={option.value}>{option.label}</option>
+          ))}
+        </select>
+      </div>
       <div className='input-box'>
         <input type='text' placeholder='UserName' required/>
         <ImUserTie className='icon'/>
